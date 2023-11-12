@@ -16,30 +16,62 @@ a {
   color: rgb(254, 189, 128);
 }
 
-.wrapperindex {
-  display: grid;
-
-}
-
 .sticky-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: white; 
-  
+  background-color: white;
 }
 
 header {
-  font-size: xx-large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between elements */
+}
+
+.header-right p {
+  margin: 0;
+  font-size: 12px; 
+}
+
+
 .landing {
-  background-color: rgba(255, 220, 132, 1); 
+  background-image: url('./images/Capture d’écran 2023-11-12 à 21.44.07.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* Sets the positioning context for the text */
   padding: 100px 0;
   text-align: center;
+  min-height: 400px; /* Adjust as necessary to fit your image */
 }
+
+.landing h1 {
+  position: absolute;
+  left: 50%;
+  top: 30%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  color: black; /* Or any color that contrasts well with the background */
+  background-color: white;
+}
+
+.landing p {
+  position: absolute;
+  left: 50%;
+  top: 40%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  color: black; /* Or any color that contrasts well with the background */
+  background-color: white;
+}
+
 
 button {
   font-family: 'DM Sans', sans-serif ;
@@ -53,18 +85,7 @@ button:hover {
   background-color: rgba(255, 200, 112, 1);
 }
 
-img, video {
-  height: auto;
-  max-width: 100% ;
-}
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  padding: 20px;
-}
 .wave_grid {
   display: flex;
   grid-template-columns: repeat (3, 1fr);
@@ -72,54 +93,69 @@ img, video {
   gap: 20px;
   padding: 20px;
 
-  }
-  .wrapperlol {
-    display: flex;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 1;
-    gap: 20px;
-    padding: 20px;
-  
-    }
-      .couvemily {
-        grid-column: 1;
+}
+
+.couvemily {
+  grid-column: 1;
   grid-row:1;
   width: 1fr;
-      }
+}
 
-  .python {grid-column: 3;
-    grid-row: 1}
+.python {
+  grid-column: 3;
+  grid-row: 1
+}
   
-/*... Rest of the CSS remains unchanged ...*/
 
-
-/* ... */
-
-.wave1
-
-{grid-column: 1;
+.wave1{
+  grid-column: 1;
   grid-row:1;
   width: 1fr;
-  }
+}
 
 .wave2
 {grid-column: 3;
-  grid-row: 1}
+  grid-row: 1
+}
+
+
+.wrapperindex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: center; 
+  margin: 0 auto; 
+  padding: 10px; 
+}
 
 .project {
-  width: 50%; 
-  max-width: 1000px; 
-  margin: 20px auto;
+  display: inline-block; 
+  margin: 10px; 
   text-align: center;
-  
+  vertical-align: top; 
+  height:70%
 }
 
 .project img, .project video {
-  width: 100%;
-  height: auto;
+  max-width: 30%; 
+  max-height: 40%; 
+  width: auto; 
+  height: auto; 
 }
 
-/* ... */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 20px;
+ 
+}
+
+
+
+
 
 .flag1 {
 grid-column: 1;

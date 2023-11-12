@@ -1,0 +1,52 @@
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    margin-left: 20px;
+  }
+  
+  .info {
+    margin-left: 20px;
+  }
+  
+  
+  .wrapper {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    padding: 20px; 
+    align-items: center; 
+    flex-direction: column;   
+  }
+  
+  .wrapper div {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;   
+  }
+  
+  .wrapper video {
+    max-width: 70%; 
+    height: auto;
+  }
+  
+  .thanks {
+    color : rgb(173, 173, 173)
+  }
+
+  .button {
+    font-family: 'DM Sans', sans-serif ;
+    background-color: rgba(255, 220, 132, 1);
+    border: none;
+    text-decoration: none;
+    color: black ;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  
+  

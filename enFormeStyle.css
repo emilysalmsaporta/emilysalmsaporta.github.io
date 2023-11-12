@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    margin-left: 20px;
+  }
+  
+  .info {
+    margin-left: 20px;
+  }
+  
+  
+  .wrapper {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    padding: 20px; 
+  }
+  
+  .wrapper div {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .wrapper img {
+    max-width: 100%; 
+    height: auto;
+  }
+  
+ .planche2 {
+    max-width: 33%;
+    height: auto;
+ }
+
+ .button {
+    font-family: 'DM Sans', sans-serif ;
+    background-color: rgba(255, 220, 132, 1);
+    border: none;
+    text-decoration: none;
+    color: black ;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  
